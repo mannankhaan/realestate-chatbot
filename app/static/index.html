@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Property Guide</title>
+  <meta name="description" content="Ask about DarGlobal projects and Wasalt property listings. Answers with sources from public data.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b5bdb'/%3E%3Cpath d='M8 24V13l8-6 8 6v11h-5v-6h-6v6z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/styles.css?v=8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"
+          integrity="sha384-/TQbtLCAerC3jgaim+N78RZSDYV7ryeoBCVqTuzRrFec2akfBkHS7ACQ3PQhvMVi" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"
+          integrity="sha384-+VfUPEb0PdtChMwmBcBmykRMDd+v6D/oFmB3rZM/puCMDYcIvF968OimRh4KQY9a" crossorigin="anonymous" defer></script>
+  <script src="/static/app.js?v=8" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M8 24V13l8-6 8 6v11h-5v-6h-6v6z"/></svg>
+        <div>
+          <h1>Property Guide <span class="x">DarGlobal × Wasalt</span></h1>
+          <p class="sub" id="subtitle">Answers from public data</p>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="ghost" id="themeBtn" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+        </button>
+        <button class="ghost" id="newChat" type="button" title="Start a new chat">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>New chat</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="chat" id="chat">
+      <section class="empty" id="empty">
+        <h2>What are you looking for?</h2>
+        <p>I search <strong>DarGlobal</strong>'s international luxury projects and a sample of
+          <strong>Wasalt</strong> listings across Saudi Arabia, and answer with sources.</p>
+        <div class="chips" id="suggestions" role="list"></div>
+        <div class="stats" id="stats" aria-live="polite"></div>
+      </section>
+      <ol class="messages" id="messages" aria-live="polite" aria-relevant="additions"></ol>
+    </main>
+
+    <form class="composer" id="composer" autocomplete="off">
+      <label for="input" class="sr-only">Ask a question</label>
+      <textarea id="input" rows="1" maxlength="1000" placeholder="Ask about listings, prices or projects…"
+                enterkeyhint="send"></textarea>
+      <button type="submit" id="send" class="send" aria-label="Send">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-2-7z"/></svg>
+      </button>
+    </form>
+
+    <footer class="foot">
+      Non-commercial technical demo. Data © DarGlobal and Wasalt.sa — verify prices on the live sites.
+      · <a href="/docs" target="_blank" rel="noopener">API docs</a>
+      · <a href="/api/stats" target="_blank" rel="noopener">Dataset</a>
+      <span id="repoWrap" hidden>· <a id="repoLink" href="#" target="_blank" rel="noopener">Source code</a></span>
+    </footer>
+  </div>
+  <noscript><p class="noscript">This chat needs JavaScript enabled.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,7 @@
+playwright==1.65.2
+httpx==0.28.1
+selectolax==1.0.2
+tenacity==9.2.1
+tqdm==4.70.1
+beautifulsoup4==4.15.0
+curl_cffi==0.17.0

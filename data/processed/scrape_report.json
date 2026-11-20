@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-11-20T11:21:22+00:00",
+  "scrape_date": "2026-11-20",
+  "darglobal": {
+    "pages": 448,
+    "by_section": {
+      "blog": 264,
+      "press": 69,
+      "project": 36,
+      "insights": 25,
+      "company": 16,
+      "projects": 14,
+      "partners": 11,
+      "one-of-one": 7,
+      "home": 1,
+      "one-of-one-index": 1,
+      "projects-index": 1,
+      "insights-index": 1,
+      "press-index": 1,
+      "blog-index": 1
+    },
+    "projects": 41,
+    "failed_urls": 15,
+    "method": "Playwright + installed Google Chrome (site behind Imperva/Incapsula)"
+  },
+  "wasalt": {
+    "listings": 3901,
+    "static_pages": 9,
+    "by_purpose_type": {
+      "sale/Apartment": 1178,
+      "rent/Apartment": 628,
+      "sale/Villa": 498,
+      "sale/Land": 261,
+      "sale/Floor": 236,
+      "rent/Room": 151,
+      "rent/Floor": 150,
+      "rent/Villa": 149,
+      "sale/Rest House": 148,
+      "rent/Building": 147,
+      "rent/Land": 146,
+      "sale/Building": 145,
+      "rent/Rest House": 61,
+      "rent/Duplex": 1,
+      "rent/Chalet": 1,
+      "sale/Room": 1
+    },
+    "by_city": {
+      "Riyadh": 2145,
+      "Jeddah": 1029,
+      "Dammam": 122,
+      "Makkah": 121,
+      "Khobar": 116,
+      "Madinah": 72,
+      "Buraydah": 45,
+      "Taif": 23,
+      "Jazan": 23,
+      "Abha": 16,
+      "Al Ahsa": 13,
+      "Al Baha": 12,
+      "Diriyah": 10,
+      "Al Zulfi": 10,
+      "Khamis Mushait": 8,
+      "Huraymila": 7,
+      "Unaizah": 7,
+      "King Abdullah Economic City": 7,
+      "Jubail": 7,
+      "Al Basar": 6
+    },
+    "unavailable_or_failed": 98,
+    "sitemap_listing_urls": 60000,
+    "sampling": "stratified by purpose x type, newest-first, seed 42",
+    "method": "Next.js /_next/data JSON routes, <=1 req/s, field allow-list"
+  },
+  "documents": 4358,
+  "compliance": [
+    "robots.txt honoured on both sites (Wasalt /search never requested)",
+    "Wasalt llms.txt honoured: public listing content only, moderate rate, attribution 'Source: Wasalt.sa', non-commercial",
+    "No owner/agent names, phone numbers, emails or license numbers stored (allow-list + regex redaction)"
+  ]
+}

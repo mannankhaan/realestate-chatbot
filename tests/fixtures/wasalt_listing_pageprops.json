@@ -1,0 +1,46 @@
+{
+  "propertyDetailsV3": {
+    "id": 1,
+    "isVerified": true,
+    "publishedAt": "2026-11-01T10:00:00.000Z",
+    "updatedAt": "2026-11-02T10:00:00.000Z",
+    "leadContactInfo": {"name": "Fake Agent", "phone": "0551234567", "email": "agent@example.com"},
+    "propertyOwner": {"resEmployee": {"name": "Fake Agent", "licence": "1234567890"}, "ownerName": "Fake Owner"},
+    "location": {"lat": "24.81234567", "lon": "46.6098765"},
+    "streetInfo": {"streetWidth": 20},
+    "priceValuation": {"lower_bound": {}, "upper_bound": {}},
+    "propertyInfo": {
+      "title": "Apartment 160.5 SQM with 3 Bedrooms",
+      "propertyFor": "rent",
+      "propertyMainType": "Residential",
+      "propertySubType": "Apartment",
+      "city": "Riyadh",
+      "district": "Al Malqa",
+      "zone": "Al Malqa",
+      "territory": "North Riyadh",
+      "address": "Al Malqa, North Riyadh, Riyadh",
+      "salePrice": "",
+      "expectedRent": 75000,
+      "rentFreq": {
+        "monthly": {"enCurrencyType": "SAR", "default_freq": false, "amount": 6250, "freq": "monthly"},
+        "yearly": {"enCurrencyType": "SAR", "default_freq": true, "amount": 75000, "freq": "yearly"}
+      },
+      "currencyType": "SAR",
+      "furnishingType": null,
+      "facingType": "North",
+      "statusTypeSlug": "approved",
+      "description": "<p>Bright apartment near King Salman Road.<br>Call 0551234567 for viewing.</p>"
+    },
+    "attributes": [
+      {"key": "noOfBedrooms", "name": "Bedrooms", "value": 3},
+      {"key": "noOfBathrooms", "name": "Bathrooms", "value": 2},
+      {"key": "builtUpArea", "name": "Built-Up Area", "value": "160.5", "unit": "SQM"}
+    ],
+    "additionalAttributes": [
+      {"key": "completionYear", "label": "Age", "value": "New"},
+      {"key": "planNumber", "label": "Plan", "value": "2153"},
+      {"key": "landNumber", "label": "Land", "value": "5143"},
+      {"key": "regaAdvLicDate", "label": "Licence date", "value": "22/01/2026"}
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+# New -> Blueprint -> pick this repo. Render builds the Dockerfile (the index is built inside the image).
+services:
+  - type: web
+    name: realestate-chatbot
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false          # entered in the Render dashboard; never stored in the repo
+      - key: APP_PUBLIC_URL
+        sync: false
+      - key: REPO_URL
+        sync: false          # public GitHub URL, shown as 'Source code' in the UI footer
+      - key: PREWARM_CACHE
+        value: "true"
+      # free instance = 512 MB RAM / 0.1 CPU: skip the cross-encoder (~8 s per query at 0.1 CPU,
+      # ~70 MB) and run ONNX single-threaded; retrieval uses BM25 + vectors + RRF + title boost
+      - key: USE_RERANKER
+        value: "false"
+      - key: ONNX_THREADS
+        value: "1"
+      - key: PORT
+        value: "7860"

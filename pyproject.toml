@@ -1,0 +1,32 @@
+[project]
+name = "realestate-chatbot"
+version = "1.0.0"
+description = "Agentic RAG chatbot over public DarGlobal and Wasalt data"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["data", "index", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+ignore = [
+  "E702",  # one-line `clauses.append(...); params.append(...)` pairs read better in the SQL builder
+  "S101",  # asserts are fine in tests and internal invariants
+  "S311",  # random is used for reproducible sampling, not crypto
+  "S608",  # SQL is built from fixed column names only; all values are bound parameters
+  "B008",
+  "E501",  # long data/regex lines; formatting is not enforced
+  "B905",  # zip() strictness is not needed for py3.11 internal pairs
+  "UP031",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S", "E501"]
+"eval/*" = ["S"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
