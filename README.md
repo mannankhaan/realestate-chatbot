@@ -2,7 +2,7 @@
 
 An AI assistant that answers real-estate questions from public data scraped from **DarGlobal** (international luxury developer) and **Wasalt** (Saudi property marketplace). Every answer cites its sources. Listing searches run as exact SQL filters, and project and market questions go through hybrid retrieval with LLM tool calling.
 
-![CI](https://github.com/<github-user>/realestate-chatbot/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/mannankhaan/realestate-chatbot/actions/workflows/ci.yml/badge.svg)
 
 ## The assignment
 
@@ -18,7 +18,7 @@ Technical assignment for the **Senior AI Engineer – Agentic Systems** role at 
 
 ## 🔗 Live demo
 
-**➡️ `https://<your-service>.onrender.com`**
+**➡️ https://realestate-chatbot-5rup.onrender.com**
 
 **How to test:** open the link and ask a question, or click one of the suggested questions. The free plan sleeps when idle, so the **first load can take up to a minute**; after that answers arrive in about 3–5 seconds. Each answer shows inline citations `[n]`, a row of sources (3 shown, **View all** for the rest) and clickable follow-up questions.
 
